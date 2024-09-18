@@ -61,7 +61,7 @@ class _LoginState extends State<Login> {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Colors.grey,
+                        color: con.gris,
                       ),
                     ),
                   ),
@@ -85,10 +85,10 @@ class _LoginState extends State<Login> {
                           decoration: InputDecoration(
                             hintText: 'Correo/Usuario',
                             filled: true,
-                            fillColor: Colors.white,
+                            fillColor: con.blanco,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20.0),
-                              borderSide: BorderSide(color: Colors.black, width: 1.0),
+                              borderSide: BorderSide(color: con.negro, width: 1.0),
                             ),
                           ),
                         ),
@@ -99,17 +99,17 @@ class _LoginState extends State<Login> {
                           decoration: InputDecoration(
                             hintText: 'Contraseña',
                             filled: true,
-                            fillColor: Colors.white,
+                            fillColor: con.blanco,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20.0),
-                              borderSide: BorderSide(color: Colors.black, width: 1.0),
+                              borderSide: BorderSide(color: con.negro, width: 1.0),
                             ),
                           ),
                         ),
                         const SizedBox(height: 30,),
                         Text(
                           error,
-                          style: TextStyle(color: Colors.red, fontSize: 16),
+                          style: TextStyle(color: con.rojo, fontSize: 16),
                         ),
                         ElevatedButton(onPressed: (){
                           /*validar contraseña y usuario*/
@@ -123,11 +123,11 @@ class _LoginState extends State<Login> {
                               fixedSize: Size(200, 40),
                             ),
                             child: Text('Iniciar Sesion',
-                            style: TextStyle(color: Colors.white,fontSize: 20),)
+                            style: TextStyle(color: con.blanco,fontSize: 20),)
                         ),
                         const SizedBox(height: 30.0),
                         Text('Mi primer examen ¿Estara sencillo?',
-                        style: TextStyle(color: Colors.white, fontSize: 15),),
+                        style: TextStyle(color: con.blanco, fontSize: 15),),
                       ],
                     ),
                   ),
@@ -152,6 +152,5 @@ class _LoginState extends State<Login> {
         error='Error en usuario y contraseña';
       }
     });
-
   }
 }
