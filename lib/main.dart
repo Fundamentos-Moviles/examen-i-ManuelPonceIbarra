@@ -1,3 +1,4 @@
+import 'package:examen1_pim/home.dart';
 import 'package:examen1_pim/login.dart';
 import 'package:examen1_pim/more_info.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: //const Login(),
-      const MoreInfo(),
+      home: const Login()
     );
   }
 }
